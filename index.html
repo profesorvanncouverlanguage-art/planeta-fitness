@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="Tu rutina de Gimnasio Funcional Planeta Fitness – Ibagué: videos de cada ejercicio y control de tu progreso.">
+<meta property="og:title" content="Mi Rutina – Planeta Fitness">
+<meta property="og:description" content="Rutina con video de cada ejercicio y control de progreso.">
+<meta property="og:image" content="icon-512.png">
+<title>Mi Rutina · Planeta Fitness</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar" id="topbar" hidden>
+  <button class="icon-btn" id="btnHome" aria-label="Inicio">‹</button>
+  <img src="mark.png" alt="" class="topmark">
+  <div class="toptitle"><small>PLANETA FITNESS</small><strong id="topTitle">Rutina</strong></div>
+  <button class="icon-btn" id="btnMenu" aria-label="Progreso">★</button>
+</header>
+
+<main id="app">
+  <!-- HOME -->
+  <section id="vHome" class="view">
+    <div class="hero">
+      <img src="logo.jpg" alt="Gimnasio Funcional Planeta Fitness" class="logo">
+      <p class="tag">Tu rutina · tus videos · tu progreso</p>
+    </div>
+    <div class="card glass">
+      <label for="inNombre" class="lbl">¿Cómo te llamas?</label>
+      <input id="inNombre" class="input" placeholder="Escribe tu nombre" autocomplete="given-name" maxlength="40">
+      <p class="muted small" id="saludo"></p>
+    </div>
+    <div class="pick">
+      <button class="pick-btn" data-r="mujer"><span class="pk-ico">♀</span><span><b>Rutina Mujer</b><small>Lunes a viernes · 5 días</small></span><span class="pk-arrow">›</span></button>
+      <button class="pick-btn" data-r="hombre"><span class="pk-ico">♂</span><span><b>Rutina Hombre</b><small>Lunes a sábado · 6 días</small></span><span class="pk-arrow">›</span></button>
+    </div>
+    <div class="card glass" id="homeMaquinas" hidden>
+      <h3 class="h3">Máquinas nuevas</h3>
+      <div id="maqList" class="maq-list"></div>
+    </div>
+    <footer class="foot" id="footHome"></footer>
+  </section>
+
+  <!-- RUTINA -->
+  <section id="vRutina" class="view" hidden>
+    <div class="stats card">
+      <div class="stats-row">
+        <div><small>SEMANA</small><b id="stSemana">1</b></div>
+        <div><small>RACHA</small><b id="stRacha">0🔥</b></div>
+        <div><small>DÍAS</small><b id="stDias">0/5</b></div>
+        <div><small>MEDALLAS</small><b id="stMedallas">0</b></div>
+      </div>
+      <div class="bar"><span id="barFill"></span></div>
+      <p class="small muted" id="stTexto">0% de la semana completado</p>
+    </div>
+    <div class="daily card glass">
+      <b>Todos los días</b>
+      <ul id="dailyList"></ul>
+    </div>
+    <nav class="daytabs" id="dayTabs" role="tablist"></nav>
+    <div id="dayView"></div>
+    <footer class="foot" id="footRut"></footer>
+  </section>
+
+  <!-- PROGRESO -->
+  <section id="vProgreso" class="view" hidden>
+    <div class="card">
+      <h3 class="h3">Mi progreso</h3>
+      <p class="muted small" id="pgNombre"></p>
+      <div class="stats-row big">
+        <div><small>SEMANA ACTUAL</small><b id="pgSemana">1</b></div>
+        <div><small>RACHA SEMANAL</small><b id="pgRacha">0</b></div>
+        <div><small>ENTRENOS</small><b id="pgTotal">0</b></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3 class="h3">Calendario</h3>
+      <div class="cal-head"><button class="icon-btn sm" id="calPrev">‹</button><b id="calMes"></b><button class="icon-btn sm" id="calNext">›</button></div>
+      <div class="cal" id="cal"></div>
+      <p class="small muted">Dorado = día entrenado.</p>
+    </div>
+    <div class="card">
+      <h3 class="h3">Medallas</h3>
+      <div class="medals" id="medals"></div>
+    </div>
+    <div class="card">
+      <h3 class="h3">Historial de semanas</h3>
+      <div id="hist"></div>
+    </div>
+    <div class="card">
+      <h3 class="h3">Semana</h3>
+      <button class="btn gold block" id="btnNuevaSemana">Terminar semana y empezar la siguiente</button>
+      <button class="btn ghost block" id="btnResetSemana">Reiniciar semana actual (borra marcas)</button>
+      <button class="btn ghost block" id="btnCambiarRutina">Cambiar de rutina</button>
+      <button class="btn ghost block" id="btnCompartir">Compartir mi rutina por WhatsApp</button>
+    </div>
+  </section>
+</main>
+
+<!-- Ficha de ejercicio -->
+<div class="sheet-bg" id="sheetBg" hidden></div>
+<aside class="sheet" id="sheet" hidden aria-modal="true" role="dialog">
+  <button class="sheet-close" id="sheetClose" aria-label="Cerrar">✕</button>
+  <div id="sheetBody"></div>
+</aside>
+<div class="toast" id="toast" hidden></div>
+
+<script src="config.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

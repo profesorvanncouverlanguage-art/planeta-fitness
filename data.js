@@ -10,8 +10,25 @@ window.PF_DATA={
   ]
  },
  "todosLosDias": [
-  "Calentar 5 minutos (trotar, bicicleta, saltar lazo, etc.)",
-  "Realizar 20 minutos de cardio al finalizar la rutina"
+  "Calentar 5 minutos (caminadora curva PF-17A / PF-17B, Maxi Climber PF-24, trotar, bicicleta o saltar lazo)",
+  "Realizar 20 minutos de cardio al finalizar (caminadora curva o Maxi Climber)"
+ ],
+ "cardioMaquinas": [
+  {
+   "codigo": "PF-17A",
+   "nombre": "Caminadora curva / manual (unidad A)",
+   "foto": "maquinas/PF-17A-1.jpg"
+  },
+  {
+   "codigo": "PF-17B",
+   "nombre": "Caminadora curva / manual (unidad B)",
+   "foto": "maquinas/PF-17B-0.jpg"
+  },
+  {
+   "codigo": "PF-24",
+   "nombre": "Maxi Climber (por confirmar: puede ser un step aeróbico)",
+   "foto": "maquinas/PF-24-1.jpg"
+  }
  ],
  "ejercicios": {
   "sentadilla-barra": {
@@ -601,6 +618,150 @@ window.PF_DATA={
     "Extiende arriba sin abrir los codos."
    ],
    "error": "Abrir los codos o mover los hombros."
+  },
+  "maq-hip-thrust-maquina": {
+   "nombre": "Hip thrust en máquina",
+   "patron": "Extensión de cadera",
+   "principales": "Glúteo mayor",
+   "secundarios": "Isquiotibiales, core",
+   "tips": [
+    "Espalda alta contra el respaldo, pad o barra sobre la cadera (no el abdomen).",
+    "Empuja la cadera hasta alinear torso y muslos; aprieta 1 segundo arriba.",
+    "Baja controlado, talones bien apoyados."
+   ],
+   "error": "Arquear la cintura en vez de subir con el glúteo."
+  },
+  "maq-patada-gluteo-pie": {
+   "nombre": "Patada de glúteo de pie en máquina",
+   "patron": "Extensión de cadera",
+   "principales": "Glúteo mayor",
+   "secundarios": "Isquiotibiales",
+   "tips": [
+    "Pecho en el cojín, pie de apoyo en la plataforma y el otro detrás del rodillo.",
+    "Empuja la palanca hacia atrás extendiendo la cadera y aprieta el glúteo.",
+    "Regresa lento sin que los discos choquen."
+   ],
+   "error": "Arquear la zona lumbar o girar la cadera hacia afuera."
+  },
+  "maq-hiperextensiones": {
+   "nombre": "Hiperextensiones a 45 grados",
+   "patron": "Bisagra de cadera",
+   "principales": "Glúteos, isquiotibiales, espalda baja",
+   "secundarios": "Core",
+   "tips": [
+    "Pad justo debajo de las crestas ilíacas, talones enganchados, cuerpo alineado.",
+    "Baja el torso flexionando la cadera, sin redondear de golpe.",
+    "Sube hasta quedar en línea; no hiperextiendas la cintura."
+   ],
+   "error": "Subir más allá de la línea y comprimir la lumbar."
+  },
+  "maq-pantorrilla-sentado": {
+   "nombre": "Pantorrilla sentado",
+   "patron": "Flexión plantar",
+   "principales": "Sóleo, gemelos",
+   "secundarios": "—",
+   "tips": [
+    "Pad justo encima de las rodillas (no sobre la rótula), talones libres.",
+    "Baja el talón hasta sentir el estiramiento.",
+    "Sube lo más alto posible y sostén 1 segundo, sin rebotar."
+   ],
+   "error": "Rebotar al fondo o hacer recorridos cortos."
+  },
+  "maq-abd-declinado": {
+   "nombre": "Abdomen en banco declinado",
+   "patron": "Flexión de tronco",
+   "principales": "Recto abdominal",
+   "secundarios": "Oblicuos, transverso",
+   "tips": [
+    "Tobillos enganchados en los rodillos, manos en el pecho o a los lados de la cabeza.",
+    "Baja el torso con control y sube enrollando el abdomen.",
+    "No jales el cuello; puedes partir los 200 en bloques."
+   ],
+   "error": "Jalar el cuello con las manos o bajar de golpe."
+  },
+  "maq-cruce-poleas": {
+   "nombre": "Cruce de poleas (pecho)",
+   "patron": "Aducción horizontal",
+   "principales": "Pectoral",
+   "secundarios": "Deltoides anterior",
+   "tips": [
+    "Poleas altas, un pie adelante, torso levemente inclinado y codos fijos.",
+    "Junta las manos al frente y abajo en arco, aprieta el pecho.",
+    "Regresa lento hasta sentir el estiramiento."
+   ],
+   "error": "Doblar y estirar los codos (se vuelve un press) o usar impulso."
+  },
+  "maq-elevacion-piernas": {
+   "nombre": "Elevaciones de rodillas o piernas",
+   "patron": "Flexión de cadera / core",
+   "principales": "Recto abdominal inferior",
+   "secundarios": "Oblicuos, flexores de cadera",
+   "tips": [
+    "Espalda contra el pad, antebrazos en los apoyos, cuerpo estable.",
+    "Sube las rodillas hacia el pecho (o piernas semiextendidas si hay control).",
+    "Baja sin columpiarte. Cuenta para el cupo de abdominales."
+   ],
+   "error": "Balancear el cuerpo o empujar con la lumbar."
+  },
+  "maq-belt-squat": {
+   "nombre": "Sentadilla con cinturón (belt squat)",
+   "patron": "Dominante de rodilla",
+   "principales": "Cuádriceps, glúteos",
+   "secundarios": "Aductores, core",
+   "tips": [
+    "Cinturón a la cadera (no a la cintura), pies al ancho de hombros en la plataforma.",
+    "Siéntate atrás y abajo, pecho alto, rodillas en la línea de los pies.",
+    "Sube empujando el piso; las manos solo equilibran, no jalan."
+   ],
+   "error": "Jalonar el cuerpo con los brazos o llevar las rodillas hacia adentro."
+  },
+  "maq-prensa-horizontal": {
+   "nombre": "Prensa horizontal",
+   "patron": "Dominante de rodilla",
+   "principales": "Cuádriceps, glúteos",
+   "secundarios": "Isquiotibiales, aductores",
+   "tips": [
+    "Espalda en el pad, pies al ancho de hombros en la plataforma.",
+    "Flexiona con control y empuja sin despegar la lumbar.",
+    "No bloquees las rodillas de un golpe."
+   ],
+   "error": "Redondear la lumbar o dejar que las rodillas se vayan adentro."
+  },
+  "maq-remo-hammer": {
+   "nombre": "Remo iso-lateral (Hammer)",
+   "patron": "Tracción horizontal",
+   "principales": "Dorsales, romboides",
+   "secundarios": "Bíceps, deltoides posterior",
+   "tips": [
+    "Pecho contra el pad, pies firmes, brazos extendidos y hombros abajo.",
+    "Tira de un brazo o de los dos hacia atrás, apretando el omóplato.",
+    "Extiende con control, sin despegar el pecho."
+   ],
+   "error": "Encoger el trapecio o tirar solo con el bíceps."
+  },
+  "maq-fondos-maquina": {
+   "nombre": "Fondos en máquina / torre",
+   "patron": "Empuje vertical",
+   "principales": "Tríceps",
+   "secundarios": "Pectoral, deltoides anterior",
+   "tips": [
+    "Agarres firmes, brazos extendidos, hombros abajo y lejos de las orejas.",
+    "Baja hasta ~90° de codo, en un punto cómodo para el hombro.",
+    "Empuja arriba sin encoger el cuello."
+   ],
+   "error": "Encoger los hombros o balancear las piernas."
+  },
+  "maq-jalon-independiente": {
+   "nombre": "Jalón en máquina de brazos independientes",
+   "patron": "Tracción vertical",
+   "principales": "Dorsal ancho",
+   "secundarios": "Bíceps, romboides",
+   "tips": [
+    "Siéntate de cara al pad, pecho ligero contra el apoyo, hombros abajo.",
+    "Tira de los agarres hacia abajo y atrás, apretando el dorsal.",
+    "Regresa lento; puedes trabajar un brazo a la vez."
+   ],
+   "error": "Encoger el trapecio o balancear el tronco."
   }
  },
  "rutinas": {
@@ -616,43 +777,57 @@ window.PF_DATA={
        "id": "sentadilla-barra",
        "tarea": "4 series de 12 repeticiones, cada 4 repeticiones sostener abajo 5 segundos",
        "series": 4,
-       "nombre": "Sentadilla con barra libre"
+       "nombre": "Sentadilla con barra libre",
+       "maq": "PF-12"
       },
       {
        "id": "peso-muerto-barra",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Peso muerto con barra"
+       "nombre": "Peso muerto con barra",
+       "maq": "PF-12"
       },
       {
        "id": "zancadas",
        "tarea": "4 series de 12 repeticiones por cada pierna",
        "series": 4,
-       "nombre": "Zancadas"
+       "nombre": "Zancadas",
+       "maq": "PF-12"
       },
       {
-       "id": "hip-thrust",
+       "id": "maq-hip-thrust-maquina",
        "tarea": "4 series de 12 repeticiones, sostener arriba 5 segundos cada 4 repeticiones",
        "series": 4,
-       "nombre": "Hip thrust"
+       "nombre": "Hip thrust en máquina",
+       "maq": "PF-02"
       },
       {
        "id": "bulgara",
        "tarea": "4 series de 12 repeticiones con cada pierna",
        "series": 4,
-       "nombre": "Sentadilla búlgara"
+       "nombre": "Sentadilla búlgara",
+       "maq": "PF-12"
       },
       {
-       "id": "patada-gluteo-maquina",
+       "id": "maq-patada-gluteo-pie",
        "tarea": "4 series de 15 repeticiones con cada pierna",
        "series": 4,
-       "nombre": "Patada de glúteo en máquina"
+       "nombre": "Patada de glúteo en máquina",
+       "maq": "PF-28"
       },
       {
        "id": "aductor-maquina",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Aductor en máquina"
+       "nombre": "Aductor en máquina",
+       "maq": "PF-01"
+      },
+      {
+       "id": "maq-hiperextensiones",
+       "tarea": "4 series de 15 repeticiones",
+       "series": 4,
+       "nombre": "Hiperextensiones a 45°",
+       "maq": "PF-09"
       }
      ]
     },
@@ -662,46 +837,67 @@ window.PF_DATA={
      "foco": "Espalda, hombro, tríceps y abdomen",
      "ejercicios": [
       {
+       "id": "jalon-pecho",
+       "tarea": "4 series de 12 repeticiones. Agarre amplio",
+       "series": 4,
+       "nombre": "Jalón barra al pecho",
+       "maq": "PF-19"
+      },
+      {
+       "id": "maq-jalon-independiente",
+       "tarea": "4 series de 12 repeticiones",
+       "series": 4,
+       "nombre": "Jalón en máquina de brazos independientes",
+       "maq": "PF-22"
+      },
+      {
        "id": "remo-barra",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Remo con barra"
+       "nombre": "Remo con barra",
+       "maq": "PF-12"
       },
       {
        "id": "remo-mancuerna",
        "tarea": "4 series de 12 repeticiones con cada brazo",
        "series": 4,
-       "nombre": "Remo con mancuerna a una mano"
-      },
-      {
-       "id": "jalon-pecho",
-       "tarea": "4 series de 12 repeticiones. Agarre amplio",
-       "series": 4,
-       "nombre": "Jalón barra al pecho"
+       "nombre": "Remo con mancuerna a una mano",
+       "maq": "PF-25A"
       },
       {
        "id": "vuelos-laterales",
        "tarea": "4 series de 10 repeticiones",
        "series": 4,
-       "nombre": "Vuelos laterales con mancuerna"
+       "nombre": "Vuelos laterales con mancuerna",
+       "maq": "PF-16"
+      },
+      {
+       "id": "press-militar-hammer",
+       "tarea": "4 series de 12 repeticiones",
+       "series": 4,
+       "nombre": "Press militar Hammer (máquina)",
+       "maq": "PF-27"
       },
       {
        "id": "copa",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Copa (extensión de tríceps sobre la cabeza)"
+       "nombre": "Copa (extensión de tríceps sobre la cabeza)",
+       "maq": "PF-16"
       },
       {
        "id": "polea-lazo-triceps",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Extensión de tríceps en polea con lazo"
+       "nombre": "Extensión de tríceps en polea con lazo",
+       "maq": "PF-08"
       },
       {
-       "id": "abdomen",
+       "id": "maq-abd-declinado",
        "tarea": "Realizar 200 abdominales de su preferencia",
        "series": 1,
-       "nombre": "Abdomen (200 abdominales de tu preferencia)"
+       "nombre": "Abdomen en banco declinado",
+       "maq": "PF-20"
       }
      ]
     },
@@ -714,43 +910,50 @@ window.PF_DATA={
        "id": "sentadilla-smith",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Sentadilla en máquina Smith"
+       "nombre": "Sentadilla en máquina Smith",
+       "maq": "PF-18"
       },
       {
        "id": "prensa",
        "tarea": "4 series de 15 repeticiones, sostener abajo 5 segundos cada 5 repeticiones",
        "series": 4,
-       "nombre": "Prensa de piernas"
+       "nombre": "Prensa 45° (máquina gris)",
+       "maq": "PF-04"
       },
       {
-       "id": "bulgara",
-       "tarea": "4 series de 12 repeticiones con cada pierna",
+       "id": "hack-squat",
+       "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Sentadilla búlgara"
+       "nombre": "Hacka (sentadilla hack)",
+       "maq": "PF-06"
       },
       {
        "id": "extension-cuadriceps",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Extensión de cuádriceps"
+       "nombre": "Extensión de cuádriceps",
+       "maq": "PF-13"
       },
       {
        "id": "femoral-tumbado",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Femoral tumbado (curl acostado)"
+       "nombre": "Femoral tumbado (curl acostado)",
+       "maq": "PF-14"
       },
       {
        "id": "patada-gluteo-polea",
        "tarea": "4 series de 20 repeticiones por cada pierna",
        "series": 4,
-       "nombre": "Patada de glúteo en polea"
+       "nombre": "Patada de glúteo en polea",
+       "maq": "PF-08"
       },
       {
-       "id": "pantorrilla",
+       "id": "maq-pantorrilla-sentado",
        "tarea": "4 series de 25 repeticiones",
        "series": 4,
-       "nombre": "Pantorrilla (elevación de talones)"
+       "nombre": "Pantorrilla sentado",
+       "maq": "PF-03"
       }
      ]
     },
@@ -763,43 +966,64 @@ window.PF_DATA={
        "id": "flexiones",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Flexiones de pecho"
+       "nombre": "Flexiones de pecho",
+       "maq": "PF-21"
       },
       {
        "id": "press-banco-plano",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Banco plano"
+       "nombre": "Banco plano",
+       "maq": "PF-21"
+      },
+      {
+       "id": "aperturas-inclinado",
+       "tarea": "4 series de 12 repeticiones",
+       "series": 4,
+       "nombre": "Aperturas en banco inclinado",
+       "maq": "PF-25B"
       },
       {
        "id": "press-militar-mancuernas",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Press militar con mancuernas"
+       "nombre": "Press militar con mancuernas",
+       "maq": "PF-11"
       },
       {
        "id": "frontal-mancuerna",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Elevación frontal con mancuerna"
+       "nombre": "Elevación frontal con mancuerna",
+       "maq": "PF-16"
       },
       {
        "id": "predicador",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Curl de bíceps en predicador"
+       "nombre": "Curl de bíceps en predicador",
+       "maq": "PF-31"
       },
       {
        "id": "curl-biceps-mancuerna",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Curl de bíceps con mancuerna"
+       "nombre": "Curl de bíceps con mancuerna",
+       "maq": "PF-16"
       },
       {
-       "id": "abdomen",
-       "tarea": "200 abdominales de su preferencia",
+       "id": "maq-cruce-poleas",
+       "tarea": "4 series de 12 repeticiones",
+       "series": 4,
+       "nombre": "Cruce de poleas",
+       "maq": "PF-29"
+      },
+      {
+       "id": "maq-elevacion-piernas",
+       "tarea": "200 abdominales de su preferencia (elevaciones de rodillas o piernas)",
        "series": 1,
-       "nombre": "Abdomen (200 abdominales de tu preferencia)"
+       "nombre": "Elevaciones de piernas / abdomen",
+       "maq": "PF-23"
       }
      ]
     },
@@ -812,19 +1036,15 @@ window.PF_DATA={
        "id": "sentadilla-barra",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Sentadilla con barra libre"
+       "nombre": "Sentadilla con barra libre",
+       "maq": "PF-12"
       },
       {
        "id": "peso-muerto-barra",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Peso muerto"
-      },
-      {
-       "id": "zancadas",
-       "tarea": "4 series de 12 repeticiones con cada pierna",
-       "series": 4,
-       "nombre": "Zancadas"
+       "nombre": "Peso muerto",
+       "maq": "PF-12"
       },
       {
        "id": "hip-thrust",
@@ -833,22 +1053,32 @@ window.PF_DATA={
        "nombre": "Hip thrust"
       },
       {
-       "id": "extension-cuadriceps",
-       "tarea": "4 series de 20 repeticiones",
+       "id": "maq-belt-squat",
+       "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Extensión de cuádriceps"
+       "nombre": "Sentadilla con cinturón (belt squat)",
+       "maq": "PF-07"
+      },
+      {
+       "id": "maq-prensa-horizontal",
+       "tarea": "4 series de 15 repeticiones",
+       "series": 4,
+       "nombre": "Prensa horizontal",
+       "maq": "PF-10"
       },
       {
        "id": "flexor-sentado",
        "tarea": "4 series de 20 repeticiones",
        "series": 4,
-       "nombre": "Femoral / flexor sentado en máquina"
+       "nombre": "Femoral / flexor sentado en máquina",
+       "maq": "PF-32"
       },
       {
        "id": "abductor-maquina",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Abductor en máquina"
+       "nombre": "Abductor en máquina (palanca)",
+       "maq": "PF-15"
       }
      ]
     }
@@ -866,43 +1096,50 @@ window.PF_DATA={
        "id": "flexiones",
        "tarea": "4 series de 12 repeticiones, bajando lento",
        "series": 4,
-       "nombre": "Flexiones de pecho"
+       "nombre": "Flexiones de pecho",
+       "maq": "PF-21"
       },
       {
        "id": "press-banco-plano",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Press de banca plano con barra"
+       "nombre": "Press de banca plano con barra",
+       "maq": "PF-21"
       },
       {
        "id": "press-banco-inclinado",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Press de banca inclinado con barra"
+       "nombre": "Press inclinado en Smith",
+       "maq": "PF-18"
       },
       {
        "id": "press-banco-declinado",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Press de banca declinado"
+       "nombre": "Press declinado en Smith",
+       "maq": "PF-18"
       },
       {
        "id": "curl-biceps-mancuerna",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Curl bíceps mancuernas"
+       "nombre": "Curl bíceps mancuernas",
+       "maq": "PF-16"
       },
       {
        "id": "predicador",
        "tarea": "4 series de 10 repeticiones",
        "series": 4,
-       "nombre": "Curl de bíceps en predicador"
+       "nombre": "Curl de bíceps en predicador",
+       "maq": "PF-31"
       },
       {
        "id": "biceps-concentrado",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Curl de bíceps concentrado"
+       "nombre": "Curl de bíceps concentrado",
+       "maq": "PF-16"
       }
      ]
     },
@@ -915,61 +1152,71 @@ window.PF_DATA={
        "id": "sentadilla-barra",
        "tarea": "4 series de 12 repeticiones, sostener 3 segundos abajo, cada 4 repeticiones",
        "series": 4,
-       "nombre": "Sentadilla con barra libre"
+       "nombre": "Sentadilla con barra libre",
+       "maq": "PF-12"
       },
       {
        "id": "peso-muerto-barra",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Peso muerto con barra"
+       "nombre": "Peso muerto con barra",
+       "maq": "PF-12"
       },
       {
        "id": "zancadas",
        "tarea": "4 series de 12 repeticiones por cada pierna",
        "series": 4,
-       "nombre": "Zancadas"
+       "nombre": "Zancadas",
+       "maq": "PF-12"
       },
       {
        "id": "extension-cuadriceps",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Extensión de cuádriceps"
+       "nombre": "Extensión de cuádriceps",
+       "maq": "PF-13"
       },
       {
-       "id": "pantorrilla",
+       "id": "maq-pantorrilla-sentado",
        "tarea": "4 series de 25 repeticiones",
        "series": 4,
-       "nombre": "Pantorrilla (elevación de talones)"
+       "nombre": "Pantorrilla sentado",
+       "maq": "PF-03"
       },
       {
        "id": "press-militar-mancuernas",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Press militar con mancuernas"
+       "nombre": "Press militar con mancuernas",
+       "maq": "PF-11"
       },
       {
        "id": "vuelos-laterales",
        "tarea": "4 series de 10 repeticiones",
        "series": 4,
-       "nombre": "Laterales mancuerna"
+       "nombre": "Laterales mancuerna",
+       "maq": "PF-16"
       },
       {
        "id": "frontales-disco",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Elevaciones frontales con disco"
+       "nombre": "Elevaciones frontales con disco",
+       "maq": "PF-16"
       },
       {
        "id": "face-pull",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Face pull en polea"
+       "nombre": "Face pull en polea",
+       "maq": "PF-08"
       },
       {
-       "id": "abdomen",
+       "id": "maq-abd-declinado",
        "tarea": "Realizar 200 abdominales de su preferencia",
        "series": 1,
-       "nombre": "Abdomen (200 abdominales de tu preferencia)"
+       "nombre": "Abdomen en banco declinado",
+       "maq": "PF-20"
       }
      ]
     },
@@ -982,43 +1229,57 @@ window.PF_DATA={
        "id": "jalon-pecho",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Jalón al pecho en polea alta"
+       "nombre": "Jalón al pecho en polea alta",
+       "maq": "PF-19"
       },
       {
        "id": "remo-mancuerna",
        "tarea": "4 series de 12 repeticiones con cada brazo",
        "series": 4,
-       "nombre": "Remo mancuernas"
+       "nombre": "Remo mancuernas",
+       "maq": "PF-16"
       },
       {
        "id": "remo-barra",
        "tarea": "4 series de 12 repeticiones, sostener 3 segundos, cada 4 repeticiones",
        "series": 4,
-       "nombre": "Remo con barra"
+       "nombre": "Remo con barra",
+       "maq": "PF-12"
       },
       {
        "id": "remo-sentado",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Remo sentado en polea"
+       "nombre": "Remo sentado en polea",
+       "maq": "PF-30"
+      },
+      {
+       "id": "maq-remo-hammer",
+       "tarea": "4 series de 12 repeticiones",
+       "series": 4,
+       "nombre": "Remo iso-lateral (Hammer)",
+       "maq": "PF-26"
       },
       {
        "id": "copa",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Copa (extensión de tríceps sobre la cabeza)"
+       "nombre": "Copa (extensión de tríceps sobre la cabeza)",
+       "maq": "PF-16"
       },
       {
        "id": "polea-lazo-triceps",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Polea lazo"
+       "nombre": "Polea lazo",
+       "maq": "PF-08"
       },
       {
-       "id": "fondos-banco",
+       "id": "maq-fondos-maquina",
        "tarea": "4 series de 20 repeticiones",
        "series": 4,
-       "nombre": "Fondos en banco o máquina"
+       "nombre": "Fondos en máquina",
+       "maq": "PF-23"
       }
      ]
     },
@@ -1031,25 +1292,36 @@ window.PF_DATA={
        "id": "flexiones",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Flexiones de pecho"
+       "nombre": "Flexiones de pecho",
+       "maq": "PF-21"
       },
       {
        "id": "press-banco-mancuernas",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Press de banca plano con mancuernas"
+       "nombre": "Press de banca plano con mancuernas",
+       "maq": "PF-25A"
       },
       {
        "id": "aperturas-inclinado",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Aperturas en banco inclinado"
+       "nombre": "Aperturas en banco inclinado",
+       "maq": "PF-25B"
       },
       {
        "id": "pullover",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Pullover con mancuerna"
+       "nombre": "Pullover con mancuerna",
+       "maq": "PF-25A"
+      },
+      {
+       "id": "maq-cruce-poleas",
+       "tarea": "4 series de 12 repeticiones",
+       "series": 4,
+       "nombre": "Cruce de poleas",
+       "maq": "PF-29"
       },
       {
        "id": "curl-barra",
@@ -1061,19 +1333,22 @@ window.PF_DATA={
        "id": "martillo",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Curl martillo"
+       "nombre": "Curl martillo",
+       "maq": "PF-16"
       },
       {
        "id": "biceps-banco-inclinado",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Curl de bíceps en banco inclinado"
+       "nombre": "Curl de bíceps en banco inclinado",
+       "maq": "PF-25B"
       },
       {
-       "id": "abdomen",
-       "tarea": "200 abdominales de su preferencia",
+       "id": "maq-elevacion-piernas",
+       "tarea": "200 abdominales de su preferencia (elevaciones de rodillas o piernas)",
        "series": 1,
-       "nombre": "Abdomen (200 abdominales de tu preferencia)"
+       "nombre": "Elevaciones de piernas / abdomen",
+       "maq": "PF-23"
       }
      ]
     },
@@ -1086,37 +1361,57 @@ window.PF_DATA={
        "id": "hack-squat",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Hacka (sentadilla hack)"
+       "nombre": "Hacka (sentadilla hack)",
+       "maq": "PF-06"
       },
       {
        "id": "prensa",
        "tarea": "4 series de 20 repeticiones",
        "series": 4,
-       "nombre": "Prensa de piernas"
+       "nombre": "Prensa 45° (negra / amarilla)",
+       "maq": "PF-05"
       },
       {
        "id": "femoral-tumbado",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Femoral tumbado (curl acostado)"
+       "nombre": "Femoral tumbado (curl acostado)",
+       "maq": "PF-14"
       },
       {
        "id": "bulgara",
        "tarea": "4 series de 10 repeticiones",
        "series": 4,
-       "nombre": "Sentadilla búlgara"
+       "nombre": "Sentadilla búlgara",
+       "maq": "PF-12"
+      },
+      {
+       "id": "maq-belt-squat",
+       "tarea": "4 series de 12 repeticiones",
+       "series": 4,
+       "nombre": "Sentadilla con cinturón (belt squat)",
+       "maq": "PF-07"
+      },
+      {
+       "id": "maq-hip-thrust-maquina",
+       "tarea": "4 series de 12 repeticiones",
+       "series": 4,
+       "nombre": "Hip thrust en máquina",
+       "maq": "PF-02"
       },
       {
        "id": "press-militar-hammer",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Press militar Hammer (máquina)"
+       "nombre": "Press militar Hammer (máquina)",
+       "maq": "PF-27"
       },
       {
        "id": "vuelos-laterales",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Laterales con mancuernas"
+       "nombre": "Laterales con mancuernas",
+       "maq": "PF-16"
       },
       {
        "id": "peck-deck-hombro",
@@ -1138,46 +1433,60 @@ window.PF_DATA={
      "foco": "Espalda – Tríceps",
      "ejercicios": [
       {
-       "id": "jalon-pecho",
+       "id": "maq-jalon-independiente",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Jalón al pecho en polea alta"
+       "nombre": "Jalón en máquina de brazos independientes",
+       "maq": "PF-22"
       },
       {
        "id": "remo-banco-inclinado",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Remo en banco inclinado"
+       "nombre": "Remo en banco inclinado",
+       "maq": "PF-25A"
       },
       {
        "id": "remo-renegado",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Remo renegado"
+       "nombre": "Remo renegado",
+       "maq": "PF-16"
       },
       {
        "id": "jalon-brazos-rectos",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Jalón con brazos rectos en polea"
+       "nombre": "Jalón con brazos rectos en polea",
+       "maq": "PF-08"
+      },
+      {
+       "id": "maq-hiperextensiones",
+       "tarea": "4 series de 15 repeticiones",
+       "series": 4,
+       "nombre": "Hiperextensiones a 45°",
+       "maq": "PF-09"
       },
       {
        "id": "copa",
        "tarea": "4 series de 12 repeticiones",
        "series": 4,
-       "nombre": "Copa (extensión de tríceps sobre la cabeza)"
+       "nombre": "Copa (extensión de tríceps sobre la cabeza)",
+       "maq": "PF-16"
       },
       {
        "id": "polea-lazo-triceps",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Polea lazo"
+       "nombre": "Polea lazo",
+       "maq": "PF-29"
       },
       {
        "id": "rompe-craneos",
        "tarea": "4 series de 15 repeticiones",
        "series": 4,
-       "nombre": "Rompe cráneos (press francés)"
+       "nombre": "Rompe cráneos (press francés)",
+       "maq": "PF-25A"
       }
      ]
     }
@@ -3391,4 +3700,4 @@ window.PF_DATA={
   }
  ]
 };
-window.PF_VIDEOS={"sentadilla-barra": {"ejercicio": "Sentadilla con barra libre", "url": "https://www.youtube.com/watch?v=dsCuiccYNGs", "tipo": "video", "verificado": true, "titulo": "Cómo Hacer una Sentadilla con Barra Perfecta (1 MIN) ERRORES COMUNES", "canal": "Julien LEPRETRE"}, "peso-muerto-barra": {"ejercicio": "Peso muerto con barra", "url": "https://www.youtube.com/watch?v=0XL4cZR2Ink", "tipo": "video", "verificado": true, "titulo": "Cómo hacer el PESO MUERTO con seguridad (EN 5 PASOS)", "canal": "Julien LEPRETRE"}, "zancadas": {"ejercicio": "Zancadas", "url": "https://www.youtube.com/watch?v=Xcfs_3DMKlc", "tipo": "video", "verificado": true, "titulo": "(Cámara lenta) Cómo hacer una zancada correctamente - Besttraining", "canal": "Bestcycling"}, "hip-thrust": {"ejercicio": "Hip thrust", "url": "https://www.youtube.com/watch?v=efe-QObKAZU", "tipo": "video", "verificado": true, "titulo": "¿Cómo Hacer un Empuje de Cadera con Barra? || Técnica Correcta", "canal": "Dra. Isabel Junio"}, "bulgara": {"ejercicio": "Sentadilla búlgara", "url": "https://www.youtube.com/watch?v=x_k90ghjPPw", "tipo": "video", "verificado": true, "titulo": "CÓMO HACER UNA SENTADILLA BULGARA (Bulgarian Split Squat) | Ejercicios para aumentar masa muscular", "canal": "Maria Baptista Fitness"}, "patada-gluteo-maquina": {"ejercicio": "Patada de glúteo en máquina", "url": "https://www.youtube.com/watch?v=RT5ZuVCy5Ac", "tipo": "video", "verificado": true, "titulo": "Patada de GLÉTEO en MÁQUINA.  Cómo congestionar Glúteos al Máximo", "canal": "Zonapablo"}, "aductor-maquina": {"ejercicio": "Aductor en máquina", "url": "https://www.youtube.com/watch?v=fItDiXXZyZo", "tipo": "video", "verificado": true, "titulo": "Cómo realizar el ejercicio de aductores en máquina guiada.", "canal": "Fit Kamp"}, "remo-barra": {"ejercicio": "Remo con barra", "url": "https://www.youtube.com/watch?v=3uiWjik2yEQ", "tipo": "video", "verificado": true, "titulo": "COMO HACER EL REMO CON BARRA (paso a paso) | TECNICAS GYMTOPZ", "canal": "Tecnicas Gymtopz"}, "remo-mancuerna": {"ejercicio": "Remo con mancuerna a una mano", "url": "https://www.youtube.com/watch?v=6sP06AxKAzU", "tipo": "video", "verificado": true, "titulo": "REMO CON MANCUERNA", "canal": "Priscilla_bc"}, "jalon-pecho": {"ejercicio": "Jalón al pecho en polea alta", "url": "https://www.youtube.com/watch?v=eSlKErmf5WU", "tipo": "video", "verificado": true, "titulo": "Jalón polea alta al pecho  | Jalón Frontal Técnica Correcta", "canal": "JON JAMES CANO"}, "vuelos-laterales": {"ejercicio": "Elevaciones laterales con mancuerna", "url": "https://www.youtube.com/watch?v=hgLpdwMtEEs", "tipo": "video", "verificado": true, "titulo": "CÓMO HACER ELEVACIONES LATERALES | HAZLO ASÍ! en 1 minuto", "canal": "Jesús López Trainer"}, "copa": {"ejercicio": "Copa (extensión de tríceps sobre la cabeza)", "url": "https://www.youtube.com/watch?v=ck2tk_5P-10", "tipo": "video", "verificado": true, "titulo": "COMO HACER COPA DE TRÍCEPS | Gymtopz", "canal": "Tecnicas Gymtopz"}, "polea-lazo-triceps": {"ejercicio": "Extensión de tríceps en polea con lazo", "url": "https://www.youtube.com/watch?v=uZg6VtRhwQY", "tipo": "video", "verificado": true, "titulo": "Tríceps en Polea con Cuerdas / Tips Claves", "canal": "Zonapablo"}, "abdomen": {"ejercicio": "Abdomen (200 abdominales de tu preferencia)", "url": "https://www.youtube.com/watch?v=OsUz898onTE", "tipo": "video", "verificado": true, "titulo": "Marca tu abdomen: Abdominal Crunch", "canal": "P4P Español"}, "sentadilla-smith": {"ejercicio": "Sentadilla en máquina Smith", "url": "https://www.youtube.com/watch?v=4r9o_rqFZX4", "tipo": "video", "verificado": true, "titulo": "Como hacer SENTADILLA en MULTIPOWER  o MÁQUINA SMITH", "canal": "Zonapablo"}, "prensa": {"ejercicio": "Prensa de piernas", "url": "https://www.youtube.com/watch?v=xvCynwyNoP4", "tipo": "video", "verificado": true, "titulo": "CÓMO USAR LA PRENSA INCLINADA PARA CRECER TUS PIERNAS (CUÁDRICEPS Y GLÚTEOS)", "canal": "Andres Vazquez Personal Trainer"}, "extension-cuadriceps": {"ejercicio": "Extensión de cuádriceps", "url": "https://www.youtube.com/watch?v=GwkdX6k9314", "tipo": "video", "verificado": true, "titulo": "🔴Extensión de CUADRICEPS en MAQUINA [Manual de instrucciones] 🤓", "canal": "Javi NewBody"}, "femoral-tumbado": {"ejercicio": "Femoral tumbado (curl acostado)", "url": "https://www.youtube.com/watch?v=kmtn5RJkvVE", "tipo": "video", "verificado": true, "titulo": "Curl de pierna acostado", "canal": "Fitness Consciente"}, "patada-gluteo-polea": {"ejercicio": "Patada de glúteo en polea", "url": "https://www.youtube.com/watch?v=frL1ODvCZWM", "tipo": "video", "verificado": true, "titulo": "Patada  de Glúteo en Polea", "canal": "Zonapablo"}, "pantorrilla": {"ejercicio": "Pantorrilla (elevación de talones)", "url": "https://www.youtube.com/watch?v=6tqRg_tsi3o", "tipo": "video", "verificado": true, "titulo": "Elevacion de talones - Ejercicios para  Pantorrillas Gemelos / Tobillo", "canal": "P4P WORKOUTS "}, "flexiones": {"ejercicio": "Flexiones de pecho", "url": "https://www.youtube.com/watch?v=b2UagYWNErY", "tipo": "video", "verificado": true, "titulo": "Cómo Hacer Flexiones (¡DEJA de Cometer Estos 5 Errores!)", "canal": "Blue Man"}, "press-banco-plano": {"ejercicio": "Press de banca plano con barra", "url": "https://www.youtube.com/watch?v=fqsTgdTPRQU", "tipo": "video", "verificado": true, "titulo": "CÓMO HACER PRESS de BANCA con BARRA CORRECTAMENTE | Ejercicios en 1 minuto", "canal": "Borja Yus "}, "press-militar-mancuernas": {"ejercicio": "Press militar con mancuernas", "url": "https://www.youtube.com/watch?v=GELRUlUSxeI", "tipo": "video", "verificado": true, "titulo": "Técnica Press de Hombros con Mancuernas", "canal": "Dra. Isabel Junio"}, "frontal-mancuerna": {"ejercicio": "Elevación frontal con mancuerna", "url": "https://www.youtube.com/watch?v=tiZinIwDDO4", "tipo": "video", "verificado": true, "titulo": "Elevación frontal con mancuerna", "canal": "Priscilla_bc"}, "predicador": {"ejercicio": "Curl de bíceps en predicador", "url": "https://www.youtube.com/watch?v=lXbs6as_TvA", "tipo": "video", "verificado": true, "titulo": "CÓMO HACER CURL PREDICADOR CORRECTAMENTE / HOW TO DO PREACHER CURL CORRECTLY", "canal": "MTOR trainer"}, "curl-biceps-mancuerna": {"ejercicio": "Curl de bíceps con mancuerna", "url": "https://www.youtube.com/watch?v=OLF39uJo9YM", "tipo": "video", "verificado": true, "titulo": "Bíceps Alterno con Mancuernas", "canal": "Zonapablo"}, "flexor-sentado": {"ejercicio": "Femoral / flexor sentado en máquina", "url": "https://www.youtube.com/watch?v=locj9zuXya0", "tipo": "video", "verificado": true, "titulo": "🔴 FEMORAL SENTADO en MAQUINA [Manual de instrucciones] 🤓", "canal": "Javi NewBody"}, "abductor-maquina": {"ejercicio": "Abductor en máquina", "url": "https://www.youtube.com/watch?v=-g5AF8wA740", "tipo": "video", "verificado": true, "titulo": "Abductores en máquina", "canal": "Fitness Consciente"}, "press-banco-inclinado": {"ejercicio": "Press de banca inclinado con barra", "url": "https://www.youtube.com/watch?v=-vYzoCo9VRU", "tipo": "video", "verificado": true, "titulo": "PRESS INCLINADO CON BARRA | ¡Esta es la ejecución correcta!✅ - Frank Serapión", "canal": "FRANK SERAPIÓN"}, "press-banco-declinado": {"ejercicio": "Press de banca declinado", "url": "https://www.youtube.com/watch?v=L1U8yy4OqbQ", "tipo": "video", "verificado": true, "titulo": "Press Banca Declinado con Barra - para Pecho", "canal": "Zonapablo"}, "biceps-concentrado": {"ejercicio": "Curl de bíceps concentrado", "url": "https://www.youtube.com/watch?v=FrOJpldJWC4", "tipo": "video", "verificado": true, "titulo": "Curl concentrado con mancuerna: Cómo hacerlo correctamente", "canal": "EresFitness"}, "frontales-disco": {"ejercicio": "Elevaciones frontales con disco", "url": "https://www.youtube.com/watch?v=s-IHAo3OE7A", "tipo": "video", "verificado": true, "titulo": "Elevación Frontal con DISCO. Ejercicio de hombro con DISCO", "canal": "Zonapablo"}, "face-pull": {"ejercicio": "Face pull en polea", "url": "https://www.youtube.com/watch?v=UaZPhyztYNU", "tipo": "video", "verificado": true, "titulo": "FACE PULL Polea Alta. Ejercicio de Hombro Posterior", "canal": "Zonapablo"}, "remo-sentado": {"ejercicio": "Remo sentado en polea", "url": "https://www.youtube.com/watch?v=gfc5NDJrVOk", "tipo": "video", "verificado": true, "titulo": "REMO SENTADO ¡POSICIÓN CORRECTA!", "canal": "Entrenamiento Diferencial"}, "fondos-banco": {"ejercicio": "Fondos en banco o máquina", "url": "https://www.youtube.com/watch?v=H6r0fh2-YNU", "tipo": "video", "verificado": true, "titulo": "🔴 Cómo hacer FONDOS en banco para TRICEPS  ✅", "canal": "Javi NewBody"}, "press-banco-mancuernas": {"ejercicio": "Press de banca plano con mancuernas", "url": "https://www.youtube.com/watch?v=jWnGhz1f5D4", "tipo": "video", "verificado": true, "titulo": "Press de pecho con mancuernas en 2 minutos: la técnica correcta", "canal": "Gym Topz"}, "aperturas-inclinado": {"ejercicio": "Aperturas en banco inclinado", "url": "https://www.youtube.com/watch?v=xaV9Kne7LS8", "tipo": "video", "verificado": true, "titulo": "APERTURA INCLINADA CON MANCUERNAS PARA PECHO", "canal": "ACTIU MAGAZINE"}, "pullover": {"ejercicio": "Pullover con mancuerna", "url": "https://www.youtube.com/watch?v=NfCTdUmWYx0", "tipo": "video", "verificado": true, "titulo": "Pullover con mancuerna (Espalda)", "canal": "Fran Osés"}, "curl-barra": {"ejercicio": "Curl de bíceps de pie con barra", "url": "https://www.youtube.com/watch?v=PY9QylAMtyE", "tipo": "video", "verificado": true, "titulo": "Como hacer curl de biceps (Paso a Paso) | TECNICAS GYMTOPZ", "canal": "Tecnicas Gymtopz"}, "martillo": {"ejercicio": "Curl martillo", "url": "https://www.youtube.com/watch?v=znTSJ_2zJN0", "tipo": "video", "verificado": true, "titulo": "Curl martillo con mancuernas: la técnica PERFECTA", "canal": "Sergio Tejeda"}, "biceps-banco-inclinado": {"ejercicio": "Curl de bíceps en banco inclinado", "url": "https://www.youtube.com/watch?v=ZY19YNmm7tQ", "tipo": "video", "verificado": true, "titulo": "CURL de BÍCEPS en BANCO INCLINADO ¡Hazlo así!", "canal": "Powerexplosive"}, "hack-squat": {"ejercicio": "Sentadilla hack (máquina)", "url": "https://www.youtube.com/watch?v=P5GKCErO54g", "tipo": "video", "verificado": true, "titulo": "Sentadilla Hack", "canal": "Fitness Consciente"}, "press-militar-hammer": {"ejercicio": "Press militar Hammer (máquina)", "url": "https://www.youtube.com/watch?v=IyRu1XMhbIM", "tipo": "video", "verificado": true, "titulo": "PRESS DE HOMBRO EN MÁQUINA", "canal": "Adrian Muria - La Vieja Escuela"}, "peck-deck-hombro": {"ejercicio": "Peck deck para hombro (posterior)", "url": "https://www.youtube.com/watch?v=T41aqtopLEw", "tipo": "video", "verificado": true, "titulo": "Peck fly invertido o hombro posterior maquina", "canal": "be Aesthetic by Rodrigo Oscos"}, "frontal-barra": {"ejercicio": "Elevación frontal con barra", "url": "https://www.youtube.com/watch?v=ZI99ZWy6BjA", "tipo": "video", "verificado": true, "titulo": "✅ ELEVACIONES FRONTALES con BARRA | Hazlo BIEN así |", "canal": "Manuel Escalera"}, "remo-banco-inclinado": {"ejercicio": "Remo en banco inclinado", "url": "https://www.youtube.com/watch?v=D6lpHgyDItk", "tipo": "video", "verificado": true, "titulo": "Remo con 2 Mancuernas en Banco Inclinado", "canal": "Zonapablo"}, "remo-renegado": {"ejercicio": "Remo renegado", "url": "https://www.youtube.com/watch?v=U9sM_4Yf0TQ", "tipo": "video", "verificado": true, "titulo": "Remo renegado con mancuernas", "canal": "Javier V Carrión"}, "jalon-brazos-rectos": {"ejercicio": "Jalón con brazos rectos en polea", "url": "https://www.youtube.com/watch?v=9YQ1YXKko8s", "tipo": "video", "verificado": true, "titulo": "✅ PULLOVER con CUERDA en POLEA ALTA | Hazlo BIEN así |", "canal": "Manuel Escalera"}, "rompe-craneos": {"ejercicio": "Rompe cráneos (press francés)", "url": "https://www.youtube.com/watch?v=PTO862T8U7Y", "tipo": "video", "verificado": true, "titulo": "PRESS FRANCES TECNICA CORRECTA", "canal": "Entrenamiento Diferencial"}, "maq-hip-thrust-maquina": {"ejercicio": "Hip thrust en máquina (PF-02)", "url": "https://www.youtube.com/watch?v=gdUC0EFGWfQ", "tipo": "video", "verificado": true, "titulo": "Hip Thrust en Maquina | Guía Paso a Paso", "canal": "DrVíctorLópez"}, "maq-pantorrilla-sentado": {"ejercicio": "Elevacion de pantorrilla sentado (PF-03)", "url": "https://www.youtube.com/watch?v=QVgkdxTSCu0", "tipo": "video", "verificado": true, "titulo": "Pantorrilla sentado en máquina (tutorial express)", "canal": "Fitness Consciente"}, "maq-prensa-pies-altos": {"ejercicio": "Prensa, pies altos (más glúteo y femoral) (PF-04)", "url": "https://www.youtube.com/watch?v=z1gYlpqWTMY", "tipo": "video", "verificado": true, "titulo": "PRENSA INCLINADA PARA GLÚTEOS", "canal": "Carlos Ruiz "}, "maq-belt-squat": {"ejercicio": "Sentadilla con cinturón (belt squat) (PF-07)", "url": "https://www.youtube.com/watch?v=YBknFCaQ6NA", "tipo": "video", "verificado": true, "titulo": "BELT SQUAT MACHINE | Máquina de sentadilla con cinturón", "canal": "Lowfit Huelva"}, "maq-hiperextensiones": {"ejercicio": "Hiperextensiones a 45 grados (PF-09)", "url": "https://www.youtube.com/watch?v=MpBAD9a3uD4", "tipo": "video", "verificado": true, "titulo": "Extensión de Caderas en Banco de 45° / AKA Hiperextensiones", "canal": "DrVíctorLópez"}, "maq-prensa-horizontal": {"ejercicio": "Prensa horizontal (si se confirma) (PF-10)", "url": "https://www.youtube.com/watch?v=7II31GoNjSo", "tipo": "video", "verificado": true, "titulo": "Prensa horizontal en máquina", "canal": "Fitness Consciente"}, "maq-remo-t": {"ejercicio": "Remo T con apoyo de pecho (solo si se confirma esta función) (PF-10)", "url": "https://www.youtube.com/watch?v=zfy4f8iLDbg", "tipo": "video", "verificado": true, "titulo": "Remo en T", "canal": "Fitness Consciente"}, "maq-caminadora-curva": {"ejercicio": "Caminata o trote en banda curva (calentamiento y cardio) (PF-17A)", "url": "https://www.youtube.com/watch?v=YGoCAfU6d-s", "tipo": "video", "verificado": true, "titulo": "Cómo Usar la Caminadora Curva en el Gimnasio | PROCLUB", "canal": "Pro Club Panama"}, "maq-press-smith-banco": {"ejercicio": "Press de banco plano, inclinado o declinado en Smith (PF-18)", "url": "https://www.youtube.com/watch?v=CQ6V6o7VXcQ", "tipo": "video", "verificado": true, "titulo": "Press de banca en máquina smith", "canal": "MH Entrenamiento - Mr. Glúteo"}, "maq-abd-declinado": {"ejercicio": "Abdominales en banco declinado (PF-20)", "url": "https://www.youtube.com/watch?v=hhDJLXe4uhw", "tipo": "video", "verificado": true, "titulo": "Crunch declinado en banco", "canal": "MH Entrenamiento - Mr. Glúteo"}, "maq-jalon-independiente": {"ejercicio": "Jalón o remo alto en máquina (PF-22)", "url": "https://www.youtube.com/watch?v=3wP_438sXNw", "tipo": "video", "verificado": true, "titulo": "Cómo realizar el ejercicio de Jalón al pecho en máquina guiada.", "canal": "Fit Kamp"}, "maq-fondos-maquina": {"ejercicio": "Fondos en máquina / torre (PF-23)", "url": "https://www.youtube.com/watch?v=CkX5QdEz4IE", "tipo": "video", "verificado": true, "titulo": "FONDOS EN BARRA - DESARROLLA PECTORALES Y TRÍCEPS / TÉCNICA DE LOS EJERCICIOS", "canal": "NeofitTv"}, "maq-elevacion-piernas": {"ejercicio": "Elevaciones de rodillas o piernas (abdomen) (PF-23)", "url": "https://www.youtube.com/watch?v=sOyS5ouRtE4", "tipo": "video", "verificado": true, "titulo": "Elevaciones de piernas para abdomen en soporte", "canal": "Fitness Consciente"}, "maq-maxi-climber": {"ejercicio": "Escalada en Maxi Climber (PF-24)", "url": "https://www.youtube.com/watch?v=a1qnyHayHpo", "tipo": "video", "verificado": true, "titulo": "MAXI CLIMBER", "canal": "a3dchile"}, "maq-step": {"ejercicio": "Subidas al step (si es un step aeróbico) (PF-24)", "url": "https://www.youtube.com/watch?v=CpKJ1B4iNwc", "tipo": "video", "verificado": true, "titulo": "STEP UPS - TÉCNICA CORRECTA EXPLICADA- Galvistrainer", "canal": "Galvistrainer"}, "maq-remo-hammer": {"ejercicio": "Remo iso-lateral (si se confirma que se tira) (PF-26)", "url": "https://www.youtube.com/watch?v=FOusO8JMU3Q", "tipo": "video", "verificado": true, "titulo": "Remo horizontal en máquina", "canal": "Fitness Consciente"}, "maq-press-pecho-hammer": {"ejercicio": "Press de pecho iso-lateral (si se confirma que se empuja) (PF-26)", "url": "https://www.youtube.com/watch?v=Smc75YHdClA", "tipo": "video", "verificado": true, "titulo": "Press de pecho Hammer (máquina con discos)", "canal": "Fitness Consciente"}, "maq-patada-gluteo-pie": {"ejercicio": "Patada de glúteo de pie en máquina (PF-28)", "url": "https://www.youtube.com/watch?v=Loz95uPVk1Y", "tipo": "video", "verificado": true, "titulo": "PATADA DE GLÚTEO EN MÁQUINA DE PIE", "canal": "ADRI C FITNESS"}, "maq-cruce-poleas": {"ejercicio": "Cruce de poleas (pecho) (PF-29)", "url": "https://www.youtube.com/watch?v=W7Nc-p7wR4Q", "tipo": "video", "verificado": true, "titulo": "Aperturas  de Pectoral  en Poleas -  CRUCES PECHO", "canal": "Zonapablo"}};
+window.PF_VIDEOS={"sentadilla-barra": {"ejercicio": "Sentadilla con barra libre", "url": "https://www.youtube.com/watch?v=dsCuiccYNGs", "tipo": "video", "verificado": true, "titulo": "Cómo Hacer una Sentadilla con Barra Perfecta (1 MIN) ERRORES COMUNES", "canal": "Julien LEPRETRE"}, "peso-muerto-barra": {"ejercicio": "Peso muerto con barra", "url": "https://www.youtube.com/watch?v=0XL4cZR2Ink", "tipo": "video", "verificado": true, "titulo": "Cómo hacer el PESO MUERTO con seguridad (EN 5 PASOS)", "canal": "Julien LEPRETRE"}, "zancadas": {"ejercicio": "Zancadas", "url": "https://www.youtube.com/watch?v=Xcfs_3DMKlc", "tipo": "video", "verificado": true, "titulo": "(Cámara lenta) Cómo hacer una zancada correctamente - Besttraining", "canal": "Bestcycling"}, "hip-thrust": {"ejercicio": "Hip thrust", "url": "https://www.youtube.com/watch?v=efe-QObKAZU", "tipo": "video", "verificado": true, "titulo": "¿Cómo Hacer un Empuje de Cadera con Barra? || Técnica Correcta", "canal": "Dra. Isabel Junio"}, "bulgara": {"ejercicio": "Sentadilla búlgara", "url": "https://www.youtube.com/watch?v=x_k90ghjPPw", "tipo": "video", "verificado": true, "titulo": "CÓMO HACER UNA SENTADILLA BULGARA (Bulgarian Split Squat) | Ejercicios para aumentar masa muscular", "canal": "Maria Baptista Fitness"}, "patada-gluteo-maquina": {"ejercicio": "Patada de glúteo en máquina", "url": "https://www.youtube.com/watch?v=RT5ZuVCy5Ac", "tipo": "video", "verificado": true, "titulo": "Patada de GLÉTEO en MÁQUINA.  Cómo congestionar Glúteos al Máximo", "canal": "Zonapablo"}, "aductor-maquina": {"ejercicio": "Aductor en máquina", "url": "https://www.youtube.com/watch?v=fItDiXXZyZo", "tipo": "video", "verificado": true, "titulo": "Cómo realizar el ejercicio de aductores en máquina guiada.", "canal": "Fit Kamp"}, "remo-barra": {"ejercicio": "Remo con barra", "url": "https://www.youtube.com/watch?v=3uiWjik2yEQ", "tipo": "video", "verificado": true, "titulo": "COMO HACER EL REMO CON BARRA (paso a paso) | TECNICAS GYMTOPZ", "canal": "Tecnicas Gymtopz"}, "remo-mancuerna": {"ejercicio": "Remo con mancuerna a una mano", "url": "https://www.youtube.com/watch?v=6sP06AxKAzU", "tipo": "video", "verificado": true, "titulo": "REMO CON MANCUERNA", "canal": "Priscilla_bc"}, "jalon-pecho": {"ejercicio": "Jalón al pecho en polea alta", "url": "https://www.youtube.com/watch?v=eSlKErmf5WU", "tipo": "video", "verificado": true, "titulo": "Jalón polea alta al pecho  | Jalón Frontal Técnica Correcta", "canal": "JON JAMES CANO"}, "vuelos-laterales": {"ejercicio": "Elevaciones laterales con mancuerna", "url": "https://www.youtube.com/watch?v=hgLpdwMtEEs", "tipo": "video", "verificado": true, "titulo": "CÓMO HACER ELEVACIONES LATERALES | HAZLO ASÍ! en 1 minuto", "canal": "Jesús López Trainer"}, "copa": {"ejercicio": "Copa (extensión de tríceps sobre la cabeza)", "url": "https://www.youtube.com/watch?v=ck2tk_5P-10", "tipo": "video", "verificado": true, "titulo": "COMO HACER COPA DE TRÍCEPS | Gymtopz", "canal": "Tecnicas Gymtopz"}, "polea-lazo-triceps": {"ejercicio": "Extensión de tríceps en polea con lazo", "url": "https://www.youtube.com/watch?v=uZg6VtRhwQY", "tipo": "video", "verificado": true, "titulo": "Tríceps en Polea con Cuerdas / Tips Claves", "canal": "Zonapablo"}, "abdomen": {"ejercicio": "Abdomen (200 abdominales de tu preferencia)", "url": "https://www.youtube.com/watch?v=OsUz898onTE", "tipo": "video", "verificado": true, "titulo": "Marca tu abdomen: Abdominal Crunch", "canal": "P4P Español"}, "sentadilla-smith": {"ejercicio": "Sentadilla en máquina Smith", "url": "https://www.youtube.com/watch?v=4r9o_rqFZX4", "tipo": "video", "verificado": true, "titulo": "Como hacer SENTADILLA en MULTIPOWER  o MÁQUINA SMITH", "canal": "Zonapablo"}, "prensa": {"ejercicio": "Prensa de piernas", "url": "https://www.youtube.com/watch?v=xvCynwyNoP4", "tipo": "video", "verificado": true, "titulo": "CÓMO USAR LA PRENSA INCLINADA PARA CRECER TUS PIERNAS (CUÁDRICEPS Y GLÚTEOS)", "canal": "Andres Vazquez Personal Trainer"}, "extension-cuadriceps": {"ejercicio": "Extensión de cuádriceps", "url": "https://www.youtube.com/watch?v=GwkdX6k9314", "tipo": "video", "verificado": true, "titulo": "🔴Extensión de CUADRICEPS en MAQUINA [Manual de instrucciones] 🤓", "canal": "Javi NewBody"}, "femoral-tumbado": {"ejercicio": "Femoral tumbado (curl acostado)", "url": "https://www.youtube.com/watch?v=kmtn5RJkvVE", "tipo": "video", "verificado": true, "titulo": "Curl de pierna acostado", "canal": "Fitness Consciente"}, "patada-gluteo-polea": {"ejercicio": "Patada de glúteo en polea", "url": "https://www.youtube.com/watch?v=frL1ODvCZWM", "tipo": "video", "verificado": true, "titulo": "Patada  de Glúteo en Polea", "canal": "Zonapablo"}, "pantorrilla": {"ejercicio": "Pantorrilla (elevación de talones)", "url": "https://www.youtube.com/watch?v=6tqRg_tsi3o", "tipo": "video", "verificado": true, "titulo": "Elevacion de talones - Ejercicios para  Pantorrillas Gemelos / Tobillo", "canal": "P4P WORKOUTS "}, "flexiones": {"ejercicio": "Flexiones de pecho", "url": "https://www.youtube.com/watch?v=b2UagYWNErY", "tipo": "video", "verificado": true, "titulo": "Cómo Hacer Flexiones (¡DEJA de Cometer Estos 5 Errores!)", "canal": "Blue Man"}, "press-banco-plano": {"ejercicio": "Press de banca plano con barra", "url": "https://www.youtube.com/watch?v=fqsTgdTPRQU", "tipo": "video", "verificado": true, "titulo": "CÓMO HACER PRESS de BANCA con BARRA CORRECTAMENTE | Ejercicios en 1 minuto", "canal": "Borja Yus "}, "press-militar-mancuernas": {"ejercicio": "Press militar con mancuernas", "url": "https://www.youtube.com/watch?v=GELRUlUSxeI", "tipo": "video", "verificado": true, "titulo": "Técnica Press de Hombros con Mancuernas", "canal": "Dra. Isabel Junio"}, "frontal-mancuerna": {"ejercicio": "Elevación frontal con mancuerna", "url": "https://www.youtube.com/watch?v=tiZinIwDDO4", "tipo": "video", "verificado": true, "titulo": "Elevación frontal con mancuerna", "canal": "Priscilla_bc"}, "predicador": {"ejercicio": "Curl de bíceps en predicador", "url": "https://www.youtube.com/watch?v=lXbs6as_TvA", "tipo": "video", "verificado": true, "titulo": "CÓMO HACER CURL PREDICADOR CORRECTAMENTE / HOW TO DO PREACHER CURL CORRECTLY", "canal": "MTOR trainer"}, "curl-biceps-mancuerna": {"ejercicio": "Curl de bíceps con mancuerna", "url": "https://www.youtube.com/watch?v=OLF39uJo9YM", "tipo": "video", "verificado": true, "titulo": "Bíceps Alterno con Mancuernas", "canal": "Zonapablo"}, "flexor-sentado": {"ejercicio": "Femoral / flexor sentado en máquina", "url": "https://www.youtube.com/watch?v=locj9zuXya0", "tipo": "video", "verificado": true, "titulo": "🔴 FEMORAL SENTADO en MAQUINA [Manual de instrucciones] 🤓", "canal": "Javi NewBody"}, "abductor-maquina": {"ejercicio": "Abductor en máquina", "url": "https://www.youtube.com/watch?v=-g5AF8wA740", "tipo": "video", "verificado": true, "titulo": "Abductores en máquina", "canal": "Fitness Consciente"}, "press-banco-inclinado": {"ejercicio": "Press de banca inclinado con barra", "url": "https://www.youtube.com/watch?v=-vYzoCo9VRU", "tipo": "video", "verificado": true, "titulo": "PRESS INCLINADO CON BARRA | ¡Esta es la ejecución correcta!✅ - Frank Serapión", "canal": "FRANK SERAPIÓN"}, "press-banco-declinado": {"ejercicio": "Press de banca declinado", "url": "https://www.youtube.com/watch?v=L1U8yy4OqbQ", "tipo": "video", "verificado": true, "titulo": "Press Banca Declinado con Barra - para Pecho", "canal": "Zonapablo"}, "biceps-concentrado": {"ejercicio": "Curl de bíceps concentrado", "url": "https://www.youtube.com/watch?v=FrOJpldJWC4", "tipo": "video", "verificado": true, "titulo": "Curl concentrado con mancuerna: Cómo hacerlo correctamente", "canal": "EresFitness"}, "frontales-disco": {"ejercicio": "Elevaciones frontales con disco", "url": "https://www.youtube.com/watch?v=s-IHAo3OE7A", "tipo": "video", "verificado": true, "titulo": "Elevación Frontal con DISCO. Ejercicio de hombro con DISCO", "canal": "Zonapablo"}, "face-pull": {"ejercicio": "Face pull en polea", "url": "https://www.youtube.com/watch?v=UaZPhyztYNU", "tipo": "video", "verificado": true, "titulo": "FACE PULL Polea Alta. Ejercicio de Hombro Posterior", "canal": "Zonapablo"}, "remo-sentado": {"ejercicio": "Remo sentado en polea", "url": "https://www.youtube.com/watch?v=gfc5NDJrVOk", "tipo": "video", "verificado": true, "titulo": "REMO SENTADO ¡POSICIÓN CORRECTA!", "canal": "Entrenamiento Diferencial"}, "fondos-banco": {"ejercicio": "Fondos en banco o máquina", "url": "https://www.youtube.com/watch?v=H6r0fh2-YNU", "tipo": "video", "verificado": true, "titulo": "🔴 Cómo hacer FONDOS en banco para TRICEPS  ✅", "canal": "Javi NewBody"}, "press-banco-mancuernas": {"ejercicio": "Press de banca plano con mancuernas", "url": "https://www.youtube.com/watch?v=jWnGhz1f5D4", "tipo": "video", "verificado": true, "titulo": "Press de pecho con mancuernas en 2 minutos: la técnica correcta", "canal": "Gym Topz"}, "aperturas-inclinado": {"ejercicio": "Aperturas en banco inclinado", "url": "https://www.youtube.com/watch?v=xaV9Kne7LS8", "tipo": "video", "verificado": true, "titulo": "APERTURA INCLINADA CON MANCUERNAS PARA PECHO", "canal": "ACTIU MAGAZINE"}, "pullover": {"ejercicio": "Pullover con mancuerna", "url": "https://www.youtube.com/watch?v=NfCTdUmWYx0", "tipo": "video", "verificado": true, "titulo": "Pullover con mancuerna (Espalda)", "canal": "Fran Osés"}, "curl-barra": {"ejercicio": "Curl de bíceps de pie con barra", "url": "https://www.youtube.com/watch?v=PY9QylAMtyE", "tipo": "video", "verificado": true, "titulo": "Como hacer curl de biceps (Paso a Paso) | TECNICAS GYMTOPZ", "canal": "Tecnicas Gymtopz"}, "martillo": {"ejercicio": "Curl martillo", "url": "https://www.youtube.com/watch?v=znTSJ_2zJN0", "tipo": "video", "verificado": true, "titulo": "Curl martillo con mancuernas: la técnica PERFECTA", "canal": "Sergio Tejeda"}, "biceps-banco-inclinado": {"ejercicio": "Curl de bíceps en banco inclinado", "url": "https://www.youtube.com/watch?v=ZY19YNmm7tQ", "tipo": "video", "verificado": true, "titulo": "CURL de BÍCEPS en BANCO INCLINADO ¡Hazlo así!", "canal": "Powerexplosive"}, "hack-squat": {"ejercicio": "Sentadilla hack (máquina)", "url": "https://www.youtube.com/watch?v=P5GKCErO54g", "tipo": "video", "verificado": true, "titulo": "Sentadilla Hack", "canal": "Fitness Consciente"}, "press-militar-hammer": {"ejercicio": "Press militar Hammer (máquina)", "url": "https://www.youtube.com/watch?v=IyRu1XMhbIM", "tipo": "video", "verificado": true, "titulo": "PRESS DE HOMBRO EN MÁQUINA", "canal": "Adrian Muria - La Vieja Escuela"}, "peck-deck-hombro": {"ejercicio": "Peck deck para hombro (posterior)", "url": "https://www.youtube.com/watch?v=T41aqtopLEw", "tipo": "video", "verificado": true, "titulo": "Peck fly invertido o hombro posterior maquina", "canal": "be Aesthetic by Rodrigo Oscos"}, "frontal-barra": {"ejercicio": "Elevación frontal con barra", "url": "https://www.youtube.com/watch?v=ZI99ZWy6BjA", "tipo": "video", "verificado": true, "titulo": "✅ ELEVACIONES FRONTALES con BARRA | Hazlo BIEN así |", "canal": "Manuel Escalera"}, "remo-banco-inclinado": {"ejercicio": "Remo en banco inclinado", "url": "https://www.youtube.com/watch?v=D6lpHgyDItk", "tipo": "video", "verificado": true, "titulo": "Remo con 2 Mancuernas en Banco Inclinado", "canal": "Zonapablo"}, "remo-renegado": {"ejercicio": "Remo renegado", "url": "https://www.youtube.com/watch?v=U9sM_4Yf0TQ", "tipo": "video", "verificado": true, "titulo": "Remo renegado con mancuernas", "canal": "Javier V Carrión"}, "jalon-brazos-rectos": {"ejercicio": "Jalón con brazos rectos en polea", "url": "https://www.youtube.com/watch?v=9YQ1YXKko8s", "tipo": "video", "verificado": true, "titulo": "✅ PULLOVER con CUERDA en POLEA ALTA | Hazlo BIEN así |", "canal": "Manuel Escalera"}, "rompe-craneos": {"ejercicio": "Rompe cráneos (press francés)", "url": "https://www.youtube.com/watch?v=PTO862T8U7Y", "tipo": "video", "verificado": true, "titulo": "PRESS FRANCES TECNICA CORRECTA", "canal": "Entrenamiento Diferencial"}, "maq-hip-thrust-maquina": {"ejercicio": "Hip thrust en máquina", "url": "https://www.youtube.com/watch?v=gdUC0EFGWfQ", "tipo": "video", "verificado": true, "titulo": "Hip Thrust en Maquina | Guía Paso a Paso", "canal": "DrVíctorLópez"}, "maq-patada-gluteo-pie": {"ejercicio": "Patada de glúteo de pie en máquina", "url": "https://www.youtube.com/watch?v=Loz95uPVk1Y", "tipo": "video", "verificado": true, "titulo": "PATADA DE GLÚTEO EN MÁQUINA DE PIE", "canal": "ADRI C FITNESS"}, "maq-hiperextensiones": {"ejercicio": "Hiperextensiones a 45 grados", "url": "https://www.youtube.com/watch?v=MpBAD9a3uD4", "tipo": "video", "verificado": true, "titulo": "Extensión de Caderas en Banco de 45° / AKA Hiperextensiones", "canal": "DrVíctorLópez"}, "maq-pantorrilla-sentado": {"ejercicio": "Pantorrilla sentado", "url": "https://www.youtube.com/watch?v=QVgkdxTSCu0", "tipo": "video", "verificado": true, "titulo": "Pantorrilla sentado en máquina (tutorial express)", "canal": "Fitness Consciente"}, "maq-abd-declinado": {"ejercicio": "Abdomen en banco declinado", "url": "https://www.youtube.com/watch?v=hhDJLXe4uhw", "tipo": "video", "verificado": true, "titulo": "Crunch declinado en banco", "canal": "MH Entrenamiento - Mr. Glúteo"}, "maq-cruce-poleas": {"ejercicio": "Cruce de poleas (pecho)", "url": "https://www.youtube.com/watch?v=W7Nc-p7wR4Q", "tipo": "video", "verificado": true, "titulo": "Aperturas  de Pectoral  en Poleas -  CRUCES PECHO", "canal": "Zonapablo"}, "maq-elevacion-piernas": {"ejercicio": "Elevaciones de rodillas o piernas", "url": "https://www.youtube.com/watch?v=sOyS5ouRtE4", "tipo": "video", "verificado": true, "titulo": "Elevaciones de piernas para abdomen en soporte", "canal": "Fitness Consciente"}, "maq-belt-squat": {"ejercicio": "Sentadilla con cinturón (belt squat)", "url": "https://www.youtube.com/watch?v=YBknFCaQ6NA", "tipo": "video", "verificado": true, "titulo": "BELT SQUAT MACHINE | Máquina de sentadilla con cinturón", "canal": "Lowfit Huelva"}, "maq-prensa-horizontal": {"ejercicio": "Prensa horizontal", "url": "https://www.youtube.com/watch?v=7II31GoNjSo", "tipo": "video", "verificado": true, "titulo": "Prensa horizontal en máquina", "canal": "Fitness Consciente"}, "maq-remo-hammer": {"ejercicio": "Remo iso-lateral (Hammer)", "url": "https://www.youtube.com/watch?v=FOusO8JMU3Q", "tipo": "video", "verificado": true, "titulo": "Remo horizontal en máquina", "canal": "Fitness Consciente"}, "maq-fondos-maquina": {"ejercicio": "Fondos en máquina / torre", "url": "https://www.youtube.com/watch?v=CkX5QdEz4IE", "tipo": "video", "verificado": true, "titulo": "FONDOS EN BARRA - DESARROLLA PECTORALES Y TRÍCEPS / TÉCNICA DE LOS EJERCICIOS", "canal": "NeofitTv"}, "maq-jalon-independiente": {"ejercicio": "Jalón en máquina de brazos independientes", "url": "https://www.youtube.com/watch?v=3wP_438sXNw", "tipo": "video", "verificado": true, "titulo": "Cómo realizar el ejercicio de Jalón al pecho en máquina guiada.", "canal": "Fit Kamp"}, "maq-prensa-pies-altos": {"ejercicio": "Prensa, pies altos (más glúteo y femoral) (PF-04)", "url": "https://www.youtube.com/watch?v=z1gYlpqWTMY", "tipo": "video", "verificado": true, "titulo": "PRENSA INCLINADA PARA GLÚTEOS", "canal": "Carlos Ruiz "}, "maq-remo-t": {"ejercicio": "Remo T con apoyo de pecho (solo si se confirma esta función) (PF-10)", "url": "https://www.youtube.com/watch?v=zfy4f8iLDbg", "tipo": "video", "verificado": true, "titulo": "Remo en T", "canal": "Fitness Consciente"}, "maq-caminadora-curva": {"ejercicio": "Caminata o trote en banda curva (calentamiento y cardio) (PF-17A)", "url": "https://www.youtube.com/watch?v=YGoCAfU6d-s", "tipo": "video", "verificado": true, "titulo": "Cómo Usar la Caminadora Curva en el Gimnasio | PROCLUB", "canal": "Pro Club Panama"}, "maq-press-smith-banco": {"ejercicio": "Press de banco plano, inclinado o declinado en Smith (PF-18)", "url": "https://www.youtube.com/watch?v=CQ6V6o7VXcQ", "tipo": "video", "verificado": true, "titulo": "Press de banca en máquina smith", "canal": "MH Entrenamiento - Mr. Glúteo"}, "maq-maxi-climber": {"ejercicio": "Escalada en Maxi Climber (PF-24)", "url": "https://www.youtube.com/watch?v=a1qnyHayHpo", "tipo": "video", "verificado": true, "titulo": "MAXI CLIMBER", "canal": "a3dchile"}, "maq-step": {"ejercicio": "Subidas al step (si es un step aeróbico) (PF-24)", "url": "https://www.youtube.com/watch?v=CpKJ1B4iNwc", "tipo": "video", "verificado": true, "titulo": "STEP UPS - TÉCNICA CORRECTA EXPLICADA- Galvistrainer", "canal": "Galvistrainer"}, "maq-press-pecho-hammer": {"ejercicio": "Press de pecho iso-lateral (si se confirma que se empuja) (PF-26)", "url": "https://www.youtube.com/watch?v=Smc75YHdClA", "tipo": "video", "verificado": true, "titulo": "Press de pecho Hammer (máquina con discos)", "canal": "Fitness Consciente"}};

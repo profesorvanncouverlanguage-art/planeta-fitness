@@ -108,3 +108,14 @@ main{max-width:640px;margin:0 auto;padding:12px 14px calc(30px + env(safe-area-i
 .gal figcaption{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.7);color:var(--gold2);font-size:.72rem;padding:3px 8px;border-radius:99px}
 .tagc{display:inline-block;font-style:normal;font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:#3a2c05;color:#ffd36b;border:1px solid #8a6a12;border-radius:99px;padding:1px 6px;vertical-align:middle}
 .maq{position:relative}.gcount{position:absolute;top:6px;right:6px;font-style:normal;font-size:.7rem;background:rgba(0,0,0,.75);color:var(--gold2);padding:2px 6px;border-radius:99px}
+
+.ex-maq{flex:none;width:64px;padding:0;border:1px solid var(--gold3);border-radius:12px;background:#000;color:var(--gold2);cursor:pointer;overflow:hidden;line-height:1}
+.ex-maq img{width:64px;height:64px;object-fit:cover;display:block}
+.ex-maq span{display:block;font-size:.62rem;font-weight:800;letter-spacing:.04em;text-align:center;padding:3px 0;background:#000}
+.ex-maqname{margin:5px 0 0;color:var(--gold);font-size:.75rem;font-weight:700}
+.cardio-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}
+.cardio-th{padding:0;border:1px solid var(--line);border-radius:12px;background:#0a0a0a;color:var(--txt);cursor:pointer;overflow:hidden;text-align:left}
+.cardio-th img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.cardio-th span{display:block;padding:6px 7px;font-size:.68rem;line-height:1.25;color:var(--muted)}
+.cardio-th b{display:block;color:var(--gold2);font-size:.72rem;letter-spacing:.04em}
+@media(max-width:360px){.ex-maq{width:56px}.ex-maq img{width:56px;height:56px}.cardio-row{grid-template-columns:1fr 1fr 1fr;gap:6px}}

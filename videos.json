@@ -394,20 +394,100 @@
       "canal": "Entrenamiento Diferencial"
     },
     "maq-hip-thrust-maquina": {
-      "ejercicio": "Hip thrust en máquina (PF-02)",
+      "ejercicio": "Hip thrust en máquina",
       "url": "https://www.youtube.com/watch?v=gdUC0EFGWfQ",
       "tipo": "video",
       "verificado": true,
       "titulo": "Hip Thrust en Maquina | Guía Paso a Paso",
       "canal": "DrVíctorLópez"
     },
+    "maq-patada-gluteo-pie": {
+      "ejercicio": "Patada de glúteo de pie en máquina",
+      "url": "https://www.youtube.com/watch?v=Loz95uPVk1Y",
+      "tipo": "video",
+      "verificado": true,
+      "titulo": "PATADA DE GLÚTEO EN MÁQUINA DE PIE",
+      "canal": "ADRI C FITNESS"
+    },
+    "maq-hiperextensiones": {
+      "ejercicio": "Hiperextensiones a 45 grados",
+      "url": "https://www.youtube.com/watch?v=MpBAD9a3uD4",
+      "tipo": "video",
+      "verificado": true,
+      "titulo": "Extensión de Caderas en Banco de 45° / AKA Hiperextensiones",
+      "canal": "DrVíctorLópez"
+    },
     "maq-pantorrilla-sentado": {
-      "ejercicio": "Elevacion de pantorrilla sentado (PF-03)",
+      "ejercicio": "Pantorrilla sentado",
       "url": "https://www.youtube.com/watch?v=QVgkdxTSCu0",
       "tipo": "video",
       "verificado": true,
       "titulo": "Pantorrilla sentado en máquina (tutorial express)",
       "canal": "Fitness Consciente"
+    },
+    "maq-abd-declinado": {
+      "ejercicio": "Abdomen en banco declinado",
+      "url": "https://www.youtube.com/watch?v=hhDJLXe4uhw",
+      "tipo": "video",
+      "verificado": true,
+      "titulo": "Crunch declinado en banco",
+      "canal": "MH Entrenamiento - Mr. Glúteo"
+    },
+    "maq-cruce-poleas": {
+      "ejercicio": "Cruce de poleas (pecho)",
+      "url": "https://www.youtube.com/watch?v=W7Nc-p7wR4Q",
+      "tipo": "video",
+      "verificado": true,
+      "titulo": "Aperturas  de Pectoral  en Poleas -  CRUCES PECHO",
+      "canal": "Zonapablo"
+    },
+    "maq-elevacion-piernas": {
+      "ejercicio": "Elevaciones de rodillas o piernas",
+      "url": "https://www.youtube.com/watch?v=sOyS5ouRtE4",
+      "tipo": "video",
+      "verificado": true,
+      "titulo": "Elevaciones de piernas para abdomen en soporte",
+      "canal": "Fitness Consciente"
+    },
+    "maq-belt-squat": {
+      "ejercicio": "Sentadilla con cinturón (belt squat)",
+      "url": "https://www.youtube.com/watch?v=YBknFCaQ6NA",
+      "tipo": "video",
+      "verificado": true,
+      "titulo": "BELT SQUAT MACHINE | Máquina de sentadilla con cinturón",
+      "canal": "Lowfit Huelva"
+    },
+    "maq-prensa-horizontal": {
+      "ejercicio": "Prensa horizontal",
+      "url": "https://www.youtube.com/watch?v=7II31GoNjSo",
+      "tipo": "video",
+      "verificado": true,
+      "titulo": "Prensa horizontal en máquina",
+      "canal": "Fitness Consciente"
+    },
+    "maq-remo-hammer": {
+      "ejercicio": "Remo iso-lateral (Hammer)",
+      "url": "https://www.youtube.com/watch?v=FOusO8JMU3Q",
+      "tipo": "video",
+      "verificado": true,
+      "titulo": "Remo horizontal en máquina",
+      "canal": "Fitness Consciente"
+    },
+    "maq-fondos-maquina": {
+      "ejercicio": "Fondos en máquina / torre",
+      "url": "https://www.youtube.com/watch?v=CkX5QdEz4IE",
+      "tipo": "video",
+      "verificado": true,
+      "titulo": "FONDOS EN BARRA - DESARROLLA PECTORALES Y TRÍCEPS / TÉCNICA DE LOS EJERCICIOS",
+      "canal": "NeofitTv"
+    },
+    "maq-jalon-independiente": {
+      "ejercicio": "Jalón en máquina de brazos independientes",
+      "url": "https://www.youtube.com/watch?v=3wP_438sXNw",
+      "tipo": "video",
+      "verificado": true,
+      "titulo": "Cómo realizar el ejercicio de Jalón al pecho en máquina guiada.",
+      "canal": "Fit Kamp"
     },
     "maq-prensa-pies-altos": {
       "ejercicio": "Prensa, pies altos (más glúteo y femoral) (PF-04)",
@@ -416,30 +496,6 @@
       "verificado": true,
       "titulo": "PRENSA INCLINADA PARA GLÚTEOS",
       "canal": "Carlos Ruiz "
-    },
-    "maq-belt-squat": {
-      "ejercicio": "Sentadilla con cinturón (belt squat) (PF-07)",
-      "url": "https://www.youtube.com/watch?v=YBknFCaQ6NA",
-      "tipo": "video",
-      "verificado": true,
-      "titulo": "BELT SQUAT MACHINE | Máquina de sentadilla con cinturón",
-      "canal": "Lowfit Huelva"
-    },
-    "maq-hiperextensiones": {
-      "ejercicio": "Hiperextensiones a 45 grados (PF-09)",
-      "url": "https://www.youtube.com/watch?v=MpBAD9a3uD4",
-      "tipo": "video",
-      "verificado": true,
-      "titulo": "Extensión de Caderas en Banco de 45° / AKA Hiperextensiones",
-      "canal": "DrVíctorLópez"
-    },
-    "maq-prensa-horizontal": {
-      "ejercicio": "Prensa horizontal (si se confirma) (PF-10)",
-      "url": "https://www.youtube.com/watch?v=7II31GoNjSo",
-      "tipo": "video",
-      "verificado": true,
-      "titulo": "Prensa horizontal en máquina",
-      "canal": "Fitness Consciente"
     },
     "maq-remo-t": {
       "ejercicio": "Remo T con apoyo de pecho (solo si se confirma esta función) (PF-10)",
@@ -465,38 +521,6 @@
       "titulo": "Press de banca en máquina smith",
       "canal": "MH Entrenamiento - Mr. Glúteo"
     },
-    "maq-abd-declinado": {
-      "ejercicio": "Abdominales en banco declinado (PF-20)",
-      "url": "https://www.youtube.com/watch?v=hhDJLXe4uhw",
-      "tipo": "video",
-      "verificado": true,
-      "titulo": "Crunch declinado en banco",
-      "canal": "MH Entrenamiento - Mr. Glúteo"
-    },
-    "maq-jalon-independiente": {
-      "ejercicio": "Jalón o remo alto en máquina (PF-22)",
-      "url": "https://www.youtube.com/watch?v=3wP_438sXNw",
-      "tipo": "video",
-      "verificado": true,
-      "titulo": "Cómo realizar el ejercicio de Jalón al pecho en máquina guiada.",
-      "canal": "Fit Kamp"
-    },
-    "maq-fondos-maquina": {
-      "ejercicio": "Fondos en máquina / torre (PF-23)",
-      "url": "https://www.youtube.com/watch?v=CkX5QdEz4IE",
-      "tipo": "video",
-      "verificado": true,
-      "titulo": "FONDOS EN BARRA - DESARROLLA PECTORALES Y TRÍCEPS / TÉCNICA DE LOS EJERCICIOS",
-      "canal": "NeofitTv"
-    },
-    "maq-elevacion-piernas": {
-      "ejercicio": "Elevaciones de rodillas o piernas (abdomen) (PF-23)",
-      "url": "https://www.youtube.com/watch?v=sOyS5ouRtE4",
-      "tipo": "video",
-      "verificado": true,
-      "titulo": "Elevaciones de piernas para abdomen en soporte",
-      "canal": "Fitness Consciente"
-    },
     "maq-maxi-climber": {
       "ejercicio": "Escalada en Maxi Climber (PF-24)",
       "url": "https://www.youtube.com/watch?v=a1qnyHayHpo",
@@ -513,14 +537,6 @@
       "titulo": "STEP UPS - TÉCNICA CORRECTA EXPLICADA- Galvistrainer",
       "canal": "Galvistrainer"
     },
-    "maq-remo-hammer": {
-      "ejercicio": "Remo iso-lateral (si se confirma que se tira) (PF-26)",
-      "url": "https://www.youtube.com/watch?v=FOusO8JMU3Q",
-      "tipo": "video",
-      "verificado": true,
-      "titulo": "Remo horizontal en máquina",
-      "canal": "Fitness Consciente"
-    },
     "maq-press-pecho-hammer": {
       "ejercicio": "Press de pecho iso-lateral (si se confirma que se empuja) (PF-26)",
       "url": "https://www.youtube.com/watch?v=Smc75YHdClA",
@@ -528,22 +544,6 @@
       "verificado": true,
       "titulo": "Press de pecho Hammer (máquina con discos)",
       "canal": "Fitness Consciente"
-    },
-    "maq-patada-gluteo-pie": {
-      "ejercicio": "Patada de glúteo de pie en máquina (PF-28)",
-      "url": "https://www.youtube.com/watch?v=Loz95uPVk1Y",
-      "tipo": "video",
-      "verificado": true,
-      "titulo": "PATADA DE GLÚTEO EN MÁQUINA DE PIE",
-      "canal": "ADRI C FITNESS"
-    },
-    "maq-cruce-poleas": {
-      "ejercicio": "Cruce de poleas (pecho) (PF-29)",
-      "url": "https://www.youtube.com/watch?v=W7Nc-p7wR4Q",
-      "tipo": "video",
-      "verificado": true,
-      "titulo": "Aperturas  de Pectoral  en Poleas -  CRUCES PECHO",
-      "canal": "Zonapablo"
     }
   }
 }

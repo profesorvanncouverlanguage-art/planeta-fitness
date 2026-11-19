@@ -4,10 +4,10 @@ const D=window.PF_DATA, CFG=window.PF_CONFIG||{};
 let VIDS=Object.assign({},window.PF_VIDEOS||{});
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const KEY='pf_state_v1';
+const KEY='pf_state_v2';
 const DIAS_JS=['domingo','lunes','martes','miercoles','jueves','viernes','sabado'];
 const MESES=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-const NO_KG=new Set(['abdomen','flexiones','fondos-banco']);
+const NO_KG=new Set(['abdomen','flexiones','fondos-banco','maq-abd-declinado','maq-elevacion-piernas','maq-fondos-maquina','maq-caminadora-curva','maq-maxi-climber']);
 
 /* ---------- fechas ---------- */
 const iso=d=>{const z=new Date(d.getTime()-d.getTimezoneOffset()*6e4);return z.toISOString().slice(0,10)};
@@ -59,7 +59,14 @@ function ytId(u){const m=String(u).match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([\
 
 /* ---------- maquinas ---------- */
 const MAQ=D.maquinas||[];
+const MAQ_BY={};MAQ.forEach(m=>MAQ_BY[m.codigo]=m);
 const ejMaq={};MAQ.forEach(m=>m.ejercicios.forEach(e=>{(ejMaq[e.video]=ejMaq[e.video]||[]).includes(m.codigo)||ejMaq[e.video].push(m.codigo)}));
+function maqDe(e){return e&&e.maq&&MAQ_BY[e.maq]}
+function cardioThumbs(){
+  const ms=D.cardioMaquinas||[];
+  if(!ms.length)return '';
+  return '<div class="cardio-row">'+ms.map(m=>'<button type="button" class="cardio-th" data-maq="'+m.codigo+'"><img loading="lazy" src="'+esc(m.foto)+'" alt="'+esc(m.nombre)+'"><span><b>'+m.codigo+'</b> '+esc(m.nombre)+'</span></button>').join('')+'</div>';
+}
 
 /* ---------- vistas ---------- */
 function show(v){['vHome','vRutina','vProgreso'].forEach(x=>$('#'+x).hidden=x!==v);$('#topbar').hidden=v==='vHome';window.scrollTo(0,0)}
@@ -79,7 +86,7 @@ function abrirRutina(r,diaId){
   $('#topTitle').textContent=rut(r).titulo+(S.nombre?' · '+S.nombre:'');
   const R=rut(r),hoy=DIAS_JS[new Date().getDay()];
   diaSel=diaId||(R.dias.find(d=>d.id===hoy&&!P().hechos[d.id])||R.dias.find(d=>!P().hechos[d.id])||R.dias[0]).id;
-  $('#dailyList').innerHTML=D.todosLosDias.map(t=>'<li>'+esc(t)+'</li>').join('');
+  $('#dailyList').innerHTML=D.todosLosDias.map(t=>'<li>'+esc(t)+'</li>').join('')+cardioThumbs();
   show('vRutina');renderStats();renderTabs();renderDia();
 }
 function renderStats(){
@@ -97,12 +104,14 @@ function renderDia(){
   let h='<div class="dayhead"><div><h2>'+esc(d.nombre)+'</h2><p>'+esc(d.foco)+'</p></div><div class="pct" id="dayPct">'+pct+'%</div></div>';
   h+=step('cal','🔥 '+D.todosLosDias[0]);
   d.ejercicios.forEach((e,i)=>{
-    const ej=D.ejercicios[e.id],v=vid(e.id),k=d.id+'|'+i;
+    const ej=D.ejercicios[e.id]||{nombre:e.nombre,principales:'',secundarios:'',tips:[],error:''},v=vid(e.id),k=d.id+'|'+i,m=maqDe(e);
     let done=true;for(let s=0;s<e.series;s++)if(!p.checks[k+'|'+s])done=false;
     h+='<article class="ex'+(done?' complete':'')+'" id="ej-'+e.id+'" data-ej="'+e.id+'">';
-    h+='<div class="ex-top"><div class="ex-num">'+(i+1)+'</div><div><h3 class="ex-name" data-open="'+e.id+'">'+esc(e.nombre)+'</h3><p class="ex-task">'+esc(e.tarea)+'</p><p class="ex-mus">💪 '+esc(ej.principales)+(ej.secundarios&&ej.secundarios!=='—'?' · <span>'+esc(ej.secundarios)+'</span>':'')+'</p></div></div>';
+    h+='<div class="ex-top"><div class="ex-num">'+(i+1)+'</div>';
+    if(m){h+='<button type="button" class="ex-maq" data-maq="'+m.codigo+'" aria-label="Ver máquina '+m.codigo+'"><img loading="lazy" src="'+esc(m.foto)+'" alt="'+esc(m.nombre)+'"><span>'+m.codigo+'</span></button>';}
+    h+='<div><h3 class="ex-name" data-open="'+e.id+'">'+esc(e.nombre)+'</h3><p class="ex-task">'+esc(e.tarea)+'</p><p class="ex-mus">💪 '+esc(ej.principales||'')+(ej.secundarios&&ej.secundarios!=='—'?' · <span>'+esc(ej.secundarios)+'</span>':'')+'</p>'+(m?'<p class="ex-maqname">📍 '+m.codigo+' · '+esc(m.nombre)+'</p>':'')+'</div></div>';
     h+='<div class="ex-body"><div class="ex-actions"><a class="btn gold" href="'+esc(v.url)+'" target="_blank" rel="noopener">▶ Ver cómo se hace</a><button class="btn ghost" data-open="'+e.id+'">Ficha</button>'+
-      (ejMaq[e.id]||[]).map(c=>'<button class="btn ghost" data-maq="'+c+'">📍 '+c+'</button>').join('')+'</div>';
+      (m?'<button class="btn ghost" data-maq="'+m.codigo+'">📍 '+m.codigo+'</button>':'')+'</div>';
     h+='<ul class="tips">'+ej.tips.map(t=>'<li>'+esc(t)+'</li>').join('')+'</ul><p class="err"><b>Error común:</b> '+esc(ej.error)+'</p>';
     h+='<div class="sets">';
     for(let s=0;s<e.series;s++){h+='<label class="set"><input type="checkbox" data-k="'+k+'|'+s+'"'+(p.checks[k+'|'+s]?' checked':'')+' aria-label="Serie '+(s+1)+'"><span>'+(e.series>1?'S'+(s+1):'Hecho')+'</span></label>'}
